@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Atami';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/background2.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+form{
+    width: 35vw;
+    height: 100vh;
+    background-color: white;
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-weight: bold;
+    margin-bottom: 50px;
+    background: linear-gradient(to right, white 20%, #382699 40%, #8352C9 ,#c377f2 60%, #ffffff 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 5s linear infinite;
+}
+
+.bungkus{
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+input{
+    width: 80%;
+    padding: 20px;
+    outline: none;
+    margin: 20px 0;
+    border-radius: 30px;
+}
+
+
+button{
+    margin-top: 20%;
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-color: rgb(62, 202, 62);
+    font-weight: bold;
+    font-size: 1.3em;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.kotak{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, white 20%, #382699 40%, #8352C9 ,#c377f2 60%, white 80%);
+    background-size: 200% auto;
+    animation: animate 5s linear infinite;
+}
+
+
+@keyframes animate {
+    to {
+      background-position: -200%;
+    }
+  }

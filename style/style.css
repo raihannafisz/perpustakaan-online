@@ -1,0 +1,245 @@
+@import url(relative.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Atami';
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+.hero{
+    width: 100vw;
+    background-image: url('../assets/background.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    padding: 20px 150px;
+}
+
+.toggleBG{
+    width: 100vw;
+    height: 200vh;
+    background-image: url('../assets/background2.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    padding: 20px 150px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+nav .logo{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+nav ul li{
+    display: inline;
+    margin: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li i.fas.fa-exchange-alt{
+    cursor: pointer;
+    animation-duration: 2s;
+}
+
+nav ul li i.fas.fa-exchange-alt:hover{
+    animation: putar360 .5s alternate;
+}
+
+@keyframes putar360{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+
+
+
+.page.satu{
+    margin-top: 50px;
+    color: white;
+    display: flex;
+}
+
+
+
+.page.satu .satu.kiri{
+    font-size: 1.6em;
+}
+
+.satu.kiri h1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.satu.kiri .button{
+    margin-top: 80px;
+}
+
+.button a{
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: .8em;
+}
+
+
+
+
+.satu.kanan{
+    position: relative;
+    /* background-color: black; */
+    flex: 1;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.satu.kanan img.dua{
+    position: absolute;
+    transform: translate(-100px,40px);
+    z-index: 0;
+}
+
+
+
+
+
+
+
+.search{
+    margin-top: 150px;
+    /* background-color: black; */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    background-color: #e6e6e6;
+    color: #4e4f5e;
+    border-radius: 30px;
+    padding-right: 50px;
+}
+
+.input i{
+    padding: 20px 10px 20px 20px;
+    color: #4e4f5e;
+}
+
+.input input{
+    background-color: transparent;
+    color: #4e4f5e;
+    height: 50px;
+    width: 800px;
+    outline: none;
+    border: none;
+    font-size: 1.3em;
+}
+
+.table{
+    margin-top: 50px;
+    height: auto;
+}
+
+table i.fas{
+    font-size: 1.5em;
+}
+
+table tr th,
+table tr td{
+    text-align: center;
+    padding: 0 10px;
+}
+
+table .left{
+    text-align: left;
+}
+
+table tr .icon{
+    padding: 10px;
+}
+
+table tr .icon.backspace{
+    background: crimson;
+}
+
+table tr .icon.backspace a{
+    color: white;
+}
+
+table tr .icon.edit{
+    background-color: #ff9933;
+}
+
+table tr .icon.edit a{
+    color: white;
+}
+
+.table table tr th{
+    padding: 20px;
+    color: white
+}
+
+.table table tr:nth-of-type(even){
+    background-color: #e6e6e6;
+}
+
+.table table tr:nth-child(1){
+    background-color: #8352C9;
+}
+
+
+
+footer{
+    background: linear-gradient(15deg, #382699, #CD7DFF);
+    color: white;
+    padding: 50px;
+    font-family: 'Atami';
+    font-weight: bold;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .hero{
+        padding: 0;
+        background-color: black;
+    }
+
+    nav ul li{
+        display: none;
+    }
+}
